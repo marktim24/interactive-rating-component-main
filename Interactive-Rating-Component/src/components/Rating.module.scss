@@ -1,0 +1,25 @@
+@import 'src/assets//styles/variables';
+
+.panel {
+	width: 480px;
+	min-height: 480px;
+	padding: 40px;
+	background-color: $Dark-Blue;
+	border-radius: 5%;
+	text-align: left;
+}
+
+.icon {
+	background: $Medium-Grey;
+	border-radius: 100%;
+	padding: 10px;
+}
+
+.heading {
+	font-size: 36px;
+	color: $White;
+}
+
+.paragraph {
+	color: $Light-Grey;
+}
