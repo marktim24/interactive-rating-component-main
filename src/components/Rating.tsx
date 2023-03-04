@@ -1,5 +1,7 @@
-import React, { useState } from 'react'
 import styles from './Rating.module.scss'
+import RatingStar from '/images/icon-star.svg'
+import Illustration from '/images/illustration-thank-you.svg'
+import React, { useState } from 'react'
 
 export function Rating() {
 	const [selectRating, setSelectRating] = useState<number>()
@@ -18,7 +20,7 @@ export function Rating() {
 		<div className={`${styles.panel} ${styles.center}`}>
 			<img
 				//TODO: Add styles for illustration
-				src='src/assets/images/illustration-thank-you.svg'
+				src={Illustration}
 				alt='Star Icon'
 			/>
 			<p className={styles.rating_score}>
@@ -33,11 +35,7 @@ export function Rating() {
 	) : (
 		// Form Rating window
 		<form onSubmit={submitFormClick} className={styles.panel}>
-			<img
-				className={styles.icon}
-				src='src/assets/images/icon-star.svg'
-				alt='Star Icon'
-			/>
+			<img className={styles.icon} src={RatingStar} alt='Star Icon' />
 			<h1 className={styles.heading}>How did we do?</h1>
 			<p className={styles.paragraph}>
 				Please let us know how we did with your support request. All feedback is
