@@ -1,5 +1,5 @@
-import styles from './Rating.module.scss'
 import React, { useState } from 'react'
+import styles from './Rating.module.scss'
 
 export function Rating() {
 	const [selectRating, setSelectRating] = useState<number>()
